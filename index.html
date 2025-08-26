@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- 書くこと
@@ -13,5 +14,46 @@
     実績
     メールアドレス
     ぎっとハブのリンク -->
+    <h1>about me</h1>
+    <p>
+      初めまして。ポートフォリオをご覧いただきありがとうございます。
+      同志社大学法学部在学中の小寺陸叶です。法律の知識と情報技術を組み合わせた新しい価値を創造することを目指しています。
+      これまで、ハッカソンや個人開発などを通して、複数のWebアプリを制作してまいりました。
+      現在は基本情報技術者試験の取得を目指しつつ、ReactやJSなどのフロントエンドの技術を学んでおります。
+      実務経験を積ませていただくことを最も重要視して考えておりますので、格安でもお仕事をお受けさせてもらえたらなと考えております。どうぞよろしくお願いいたします。
+      <img src="画像/004.JPG" alt="プロフィール画像" />
+    </p>
+    <h1>スキルセット</h1>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Node.js(少し)</li>
+      <li>Python(少し)</li>
+      <li>GitHub</li>
+      <li>Figma</li>
+      <li>openAI API接続</li>
+    </ul>
+    <h1>今までの、プロジェクト</h1>
+<div class="tabs">
+  <div class="tab-buttons">
+    <button class="tab-btn active" onclick="openTab(event, 'project1')">TODOバトル</button>
+    <button class="tab-btn" onclick="openTab(event, 'project2')">やらかしバトル</button>
+    <button class="tab-btn" onclick="openTab(event, 'project3')">逆アキネーター</button>
+  </div>
+  <div id="project1" class="tab-content" style="display:block;">
+    <h2>TODOバトル</h2>
+    <p>このアプリは個人開発で作成したものです。</p>
+  </div>
+  <div id="project2" class="tab-content">
+    <h2>やらかしバトル</h2>
+    <p>このアプリが個人開発で作成したものです。</p>
+  </div>
+  <div id="project3" class="tab-content">
+    <h2>逆アキネーター</h2>
+    <p>このアプリが個人開発で作成したものです。</p>
+  </div>
+  <script src="script.js"></script>
   </body>
 </html>
