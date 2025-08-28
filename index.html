@@ -15,14 +15,17 @@
     メールアドレス
     ぎっとハブのリンク -->
     <h1>about me</h1>
-    <p>
+    <div class="profile-section">
+      <p class="profile-text">
       初めまして。ポートフォリオをご覧いただきありがとうございます。
       同志社大学法学部在学中の小寺陸叶です。法律の知識と情報技術を組み合わせた新しい価値を創造することを目指しています。
       これまで、ハッカソンや個人開発などを通して、複数のWebアプリを制作してまいりました。
       現在は基本情報技術者試験の取得を目指しつつ、ReactやJSなどのフロントエンドの技術を学んでおります。
       実務経験を積ませていただくことを最も重要視して考えておりますので、格安でもお仕事をお受けさせてもらえたらなと考えております。どうぞよろしくお願いいたします。
-      <img src="画像/004.JPG" alt="プロフィール画像" />
-    </p>
+      </p>
+      <img src="画像/004.JPG" alt="プロフィール画像" class="profile-image" />
+    
+    </div>
     <h1>スキルセット</h1>
     <ul>
       <li>HTML</li>
@@ -35,7 +38,7 @@
       <li>Figma</li>
       <li>openAI API接続</li>
     </ul>
-    <h1>今までの、プロジェクト</h1>
+    <h1>過去の成果物・プロジェクト</h1>
 <div class="tabs">
   <div class="tab-buttons">
     <button class="tab-btn active" onclick="openTab(event, 'project1')">TODOバトル</button>
@@ -44,8 +47,37 @@
   </div>
   <div id="project1" class="tab-content" style="display:block;">
     <h2>TODOバトル</h2>
-    <p>このアプリは個人開発で作成したものです。</p>
-  </div>
+    <img src="画像/005.JPG" alt="TODOバトルの利用画面" />
+    <div class="project-description">
+      ゲーム感覚でタスク管理できるAI搭載アプリ
+
+      タスクを入力するとAIが所要時間を自動で計算し、タイマーに挑戦できます。
+      時間内に完了ボタンを押せば「クリア！」となり、達成感を味わえる仕組みです。
+
+      特徴
+
+        AIがタスク時間を自動推定
+
+        熱血コーチが応援（表情・セリフが時間経過で変化）
+
+        楽しくタスクをこなせるゲーム感覚の設計
+
+      制作背景
+      「他人に時間を決められて作業するとパフォーマンスが上がる」という体験をもとに開発しました。
+
+      使用技術
+
+        フロント：React, HTML, CSS
+
+        バックエンド：Node.js
+
+        AI：OpenAI API
+
+        デプロイ：Vercel
+
+         アプリはこちらからご覧いただけます：
+        <a href="https://1cool-app-9bbv.vercel.app/" target="_blank">https://1cool-app-9bbv.vercel.app/</a>
+    </div>
   <div id="project2" class="tab-content">
     <h2>やらかしバトル</h2>
     <p>このアプリが個人開発で作成したものです。</p>
