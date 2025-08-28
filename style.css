@@ -21,3 +21,25 @@
   border-radius: 0 0 4px 4px;
   background: #fafafa;
 }
+
+.profile-image {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: block;
+  margin: 16px 0;
+}
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 32px;
+}
+
+.profile-text {
+  flex: 1;
+  font-size: 1.1em;
+  line-height: 1.8;
+}
