@@ -39,10 +39,11 @@
       <li>openAI API接続</li>
     </ul>
     <h1>過去の成果物・プロジェクト</h1>
+    <p>今まで、ハッカソンや個人開発を通し、以下のアプリを作ってきました。</p>
 <div class="tabs">
   <div class="tab-buttons">
     <button class="tab-btn active" onclick="openTab(event, 'project1')">TODOバトル</button>
-    <button class="tab-btn" onclick="openTab(event, 'project2')">やらかしバトル</button>
+    <button class="tab-btn" onclick="openTab(event, 'project2')">やらかしランキング</button>
     <button class="tab-btn" onclick="openTab(event, 'project3')">逆アキネーター</button>
   </div>
   <div id="project1" class="tab-content" style="display:block;">
@@ -52,6 +53,7 @@
       単なるタスク管理ではなく、楽しく続けられることを重視したアプリです。<br>
       タスクを入力するとAIが所要時間を推定し、ユーザーはタイマーに挑戦します。<br>
       時間内に完了ボタンを押せば「クリア！」となり、達成感を得ながら作業を進められるアプリです。<br>
+      個人開発で一からすべて制作しました。<br>
       <strong>特徴</strong><br>
       <ul>
         <li>AIがタスク時間を自動推定</li>
@@ -60,27 +62,88 @@
       </ul>
       <strong>制作背景</strong><br>
       「他人に時間を決められて作業するとパフォーマンスが上がる」という体験をもとに開発しました。<br>
-      <strong>使用技術</strong><br>
-      フロント：React, HTML, CSS<br>
-      バックエンド：Node.js<br>
-      AI：OpenAI API<br>
-      デプロイ：Vercel<br>
+      <strong>使用技術</strong><ul>
+        <li>フロント：React(UI設計), HTML, CSS</li>
+        <li>バックエンド：Node.js(APIの処理)</li>
+        <li>AI：OpenAI(4o-mini) API（所要時間の推定）</li>
+        <li>デプロイ：Vercel</li>
+      </ul>
       アプリはこちらからご利用いただけます：<br>
-      <a href="https://1cool-app-9bbv.vercel.app/" target="_blank">https://1cool-app-9bbv.vercel.app/</a>
+      <a href="https://1cool-app-9bbv.vercel.app/" target="_blank">https://1cool-app-9bbv.vercel.app/</a><br>
+      開発コードもGitHubで公開しています（下にアカウントURLを記載しておりますので、よかったらご覧ください）：<br>
     </div>
     <div class="project-image-wrapper">
       <div class="project-image-caption">実際のプレイ画像</div>
       <img src="画像/005.JPG" alt="TODOバトルの利用画面" class="project-image" />
     </div>
   </div>
+</div>
+
   <div id="project2" class="tab-content">
-    <h2>やらかしバトル</h2>
-    <p>このアプリ</p>
+  <div class="project-flex">
+    <div class="project-description">
+      <h2>やらかしランキング-あなたのやらかしはあるある？</h2>
+      <p>このアプリは自分の失敗を入力することで、その失敗のやらかし度合いを点数化して、ほかのユーザーと競えるアプリです。</p><br>
+      プログラミングサークルのメンバーたちと三人でハッカソンで制作し、入賞しました。<br>
+      私はフロントエンドのデザインと、画面遷移を担当しました。<br>
+      <strong>特徴</strong>
+      <ul>
+        <li>失敗を入力するとAIがやらかし度を点数化</li>
+        <li>データベースを使用したことで、ユーザーのやらかしを保存し、活用</li>
+        <li>斬新なアイデアで、ユーザー同士の共感を生む</li>
+      </ul>
+      <strong>使用技術</strong>
+      <ul>
+        <li>フロントエンド: HTML, CSS, React, Next.js, TypeScript</li>
+        <li>バックエンド: Node.js, TypeScript</li>
+        <li>データベース: Supabase</li>
+        <li>AI: ClaudAI API</li>
+        <li>デプロイ: Vercel</li>
+      </ul>
+      <p>アプリはこちらからご利用いただけます：</p>
+      <a href="https://demo-app-two-pied.vercel.app/" target="_blank">https://demo-app-two-pied.vercel.app/</a>
+      <p>開発コードのURL</p>
+      <a href="https://github.com/po372/demo-app" target="_blank">https://github.com/po372/demo-app</a>
+    </div>
+    <div class="project-image-wrapper">
+      <div class="project-image-caption">実際のプレイ画像</div>
+      <img src="画像/007.JPG" alt="やらかしランキングの利用画面" class="project-image" />
+    </div>
   </div>
+</div>
+
   <div id="project3" class="tab-content">
-    <h2>逆アキネーター</h2>
-    <p>このアプリが個人開発で作成したものです。</p>
+  <div class="project-flex">
+    <div class="project-description">
+      <h2>逆アキネータ-アキネーターを逆にする、新感覚クイズゲーム。</h2>
+      <p>このアプリは１５回の質問を通して、相手が思い浮かべているものをあてに行く、新感覚クイズゲームです。</p><br>
+      サークル内ハッカソンでサークル内メンバーと二人で制作し、最優秀賞をいただきました。<br>
+      私はAIの導入と要件定義、APIキーの処理を担当しました。<br>
+      <strong>特徴</strong>
+      <ul>
+        <li>20回の質問を通して、相手の考えていることを推測する新感覚のゲーム性</li>
+        <li>AIを活用した質問生成と回答解析</li>
+        <li>データベースを活用した解答精度の向上</li>
+      </ul>
+      <strong>使用技術</strong>
+      <ul>
+        <li>フロントエンド: HTML, CSS,JavaScript</li>
+        <li>バックエンド: Node.js, JavaScript</li>
+        <li>データベース: Supabase</li>
+        <li>AI: openAI(4o-mini) API</li>
+        <li>デプロイ: Vercel</li>
+      </ul>
+      <p>アプリはこちらからご利用いただけます：</p>
+      <a href="https://naga18752025.github.io/dohack_reverse_akinator/index.html" target="_blank">https://naga18752025.github.io/dohack_reverse_akinator/index.html</a>
+      <p>開発コードのURL</p>
+      <a href="https://github.com/naga18752025/dohack_reverse_akinator" target="_blank">https://github.com/naga18752025/dohack_reverse_akinator</a>
+    </div>
+    <div class="project-image-wrapper">
+      <div class="project-image-caption">実際のプレイ画像</div>
+      <img src="画像/006.JPG" alt="逆アキネーターの利用画面" class="project-image" />
+    </div>
   </div>
+</div>
   <script src="script.js"></script>
   </body>
 </html>
