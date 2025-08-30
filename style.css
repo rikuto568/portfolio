@@ -43,3 +43,11 @@
   font-size: 1.1em;
   line-height: 1.8;
 }
+.todo-battle-picture {
+  width: 150px;
+  height: auto;
+  border-radius: 12px;
+  border: 1.5px solid #ccc;
+  display: block;
+  margin-bottom: 12px;
+}
