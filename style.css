@@ -150,6 +150,7 @@ ul li {
   margin-bottom: 8px;
   justify-content: flex-start;
   flex-wrap: wrap;
+  width: 100%;
 }
 .project-description {
   flex: 1;
@@ -158,6 +159,10 @@ ul li {
   min-width: 0;
   color: #222;
   animation: fadeInLeft 1s;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 .project-image-wrapper {
   display: flex;
@@ -258,6 +263,13 @@ a:hover {
   h1 {
     font-size: 1.1em;
     padding-left: 6px;
+  }
+  .project-flex {
+    gap: 4px;
+  }
+  .project-description {
+    font-size: 0.98em;
+    padding: 0 2vw;
   }
 }
 @media (max-width: 400px) {
